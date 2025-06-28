@@ -4,7 +4,7 @@
 #include <WiFi.h>
 
 //defino la conexion a WiFi
-const char* ssid=("Aca va el ssid del WiFi");
+const char* ssid=("Aca va el ssid del WiFi PRuebo");
 const char* contraseña=("aca va la contraseña del WiFi");
 void setup() {
   InicializaUart();  // Inicializa UART0 con 115200 baudios
@@ -23,3 +23,4 @@ void loop() {
   ArduinoOTA.handle(); //Importante para el funcionamiento del OTA llama a la ESP a revisar el estado 
   delay(1000);
 }
+
