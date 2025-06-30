@@ -65,7 +65,10 @@ void InicializaParametrosAceleracion()
 {
     pinMode(CH2, INPUT);
     pinMode(ACCEL_PWM, OUTPUT);
-    analogWrite(ACCEL_PWM, 0);          // asegura reposo
+    // Configuración PWM ESP32
+    ledcAttachPin(ACCEL_PWM, 0); // Pin, canal 0
+    ledcSetup(0, 50, 8);         // Canal 0, 50 Hz, 8 bits
+    ledcWrite(0, 0);             // Duty inicial en 0
 }
 /* Lee canal 2 (Pixhawk) y actualiza el duty de ACCEL_PWM */
 void AceleradorConPixhawk()
@@ -75,13 +78,13 @@ void AceleradorConPixhawk()
 
     /* Si no hay señal → motor a reposo */
     if (pulse == 0) {
-        analogWrite(ACCEL_PWM, 0);
+        ledcWrite(0, 0);
         return;
     }
 
     /* Aplica zona muerta (± ZonaMuerta) */
     if (pulse < PulsoMinimoPix + ZonaMuerta) {
-        analogWrite(ACCEL_PWM, 0);
+        ledcWrite(0, 0);
         return;
     }
 
@@ -89,5 +92,5 @@ void AceleradorConPixhawk()
     pulse = constrain(pulse, PulsoMinimoPix, PulsoMaximoPix);
     uint16_t duty = map(pulse, PulsoMinimoPix, PulsoMaximoPix, DutyMinimo, DutyMaximo);
 
-    analogWrite(ACCEL_PWM, duty);
+    ledcWrite(0, duty);
 }
