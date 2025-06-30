@@ -23,6 +23,6 @@ void loop() {
   }
   AceleradorConPixhawk(); //llama a la funcion que lee el PWM del Pixhawk y lo envia al ESC
   ArduinoOTA.handle(); //Importante para el funcionamiento del OTA llama a la ESP a revisar el estado 
-  delay(1000);
+  delay(30);
 }
 

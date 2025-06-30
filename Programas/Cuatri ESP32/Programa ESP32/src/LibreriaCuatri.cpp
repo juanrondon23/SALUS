@@ -1,96 +1,140 @@
-#include "../include/LibreriaCuatri.h"
-#include <ArduinoOTA.h>
+#include "LibreriaCuatri.h"
 #include <WiFi.h>
+#include <ArduinoOTA.h>
 
-static constexpr uint16_t  PulsoMinimoPix = -100;  // pulso mínimo Pixhawk
-static constexpr uint16_t  PulsoMaximoPix = 100;  // pulso máximo Pixhawk
-static constexpr uint8_t   DutyMinimo     = 40;    // duty mínimo que admite tu ESC
-static constexpr uint8_t   DutyMaximo    = 150;   // duty máximo
-static constexpr uint8_t   ZonaMuerta = 40;    // ~±40 µs ≈ ±2 % de zona muerta
+/*─────── PWM / Pulsos ─────────────────────────*/
+static constexpr uint16_t PULSE_MIN_US = 1000;   // –100 %
+static constexpr uint16_t PULSE_NEU_US = 1500;   //    0 %
+static constexpr uint16_t PULSE_MAX_US = 2000;   // +100 %
+static constexpr uint16_t DZ_US        = 40;     // zona muerta ±2 %
 
-// UART0 → ya es Serial (GPIO1 = TX0, GPIO3 = RX0)
+static constexpr uint8_t  DUTY_MIN = 40;
+static constexpr uint8_t  DUTY_MAX = 150;
+/*──────────────────────────────────────────────*/
 
-void InicializaUart(long baud) {
-  Serial.begin(baud);  // UART0 ya está mapeada a GPIO1 y GPIO3
+/*─────── Estado interno ───────────────────────*/
+enum class Mode { NEU, FWD, REV_WAIT, REV_RUN };
+static Mode    mode             = Mode::NEU;
+
+static bool    relayCmdSent     = false;  // se envió RELAY_REV_ON
+static bool    reverseReady     = false;  // llegó LISTO REVERSA
+static String  rxBuffer;
+/*──────────────────────────────────────────────*/
+
+/* ========= UART ========= */
+void InicializaUart(long baud) { Serial.begin(baud); }
+
+void EnviarMensaje(const String& txt) { Serial.println(txt); }
+
+bool RecibirMensaje(String& txt) {
+    if (Serial.available()) { txt = Serial.readStringUntil('\n'); return true; }
+    return false;
 }
 
-void EnviarMensaje(const String& mensaje) {
-  Serial.println(mensaje);  // Envía texto seguido de '\n'
+/* ========= Wi-Fi ========= */
+void InicializaWiFi(const char* ssid, const char* pass) {
+    WiFi.begin(ssid, pass);
+    while (WiFi.status() != WL_CONNECTED) delay(300);
 }
 
-bool RecibirMensaje(String& mensajerecibido) {
-  if (Serial.available()) {
-    mensajerecibido = Serial.readStringUntil('\n');
-    return true;
-  }
-  return false;
-}
-// Inicializa WiFi para OTA
-void InicializaWiFi(const char* ssid, const char* contraseña) {
-  WiFi.begin(ssid, contraseña);
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-  }
-}
-
-// Inicializa funcionalidad OTA
+/* ========= OTA ========= */
 void InicializaOTA() {
-  ArduinoOTA.setHostname("cuatri-esp32");
+    ArduinoOTA.setHostname("cuatri-esp32");
 
-  ArduinoOTA.onStart([]() {
-    String type = ArduinoOTA.getCommand() == U_FLASH ? "sketch" : "filesystem";
-    Serial.println("OTA Start: " + type);
-  });
-
-  ArduinoOTA.onEnd([]() {
-    Serial.println("\nOTA End");
-  });
-
-  ArduinoOTA.onProgress([](unsigned int progress, unsigned int total) {
-    Serial.printf("Progreso: %u%%\r", (progress * 100) / total);
-  });
-
-  ArduinoOTA.onError([](ota_error_t error) {
-    Serial.printf("Error[%u]: ", error);
-    if (error == OTA_AUTH_ERROR) Serial.println("Fallo autenticación");
-    else if (error == OTA_BEGIN_ERROR) Serial.println("Fallo inicio");
-    else if (error == OTA_CONNECT_ERROR) Serial.println("Fallo conexión");
-    else if (error == OTA_RECEIVE_ERROR) Serial.println("Fallo recepción");
-    else if (error == OTA_END_ERROR) Serial.println("Fallo al finalizar");
-  });
-
-  ArduinoOTA.begin();
+    ArduinoOTA.onStart([]() {
+        EnviarMensaje("*** OTA INICIO ***");
+    });
+    ArduinoOTA.onEnd([]() {
+        EnviarMensaje("*** OTA FIN ***");
+    });
+    ArduinoOTA.onError([](ota_error_t e) {
+        EnviarMensaje("Error OTA: " + String(e));
+    });
+    ArduinoOTA.begin();
 }
-void InicializaParametrosAceleracion()
-{
+
+/* ========= PWM & acelerador ========= */
+void InicializaParametrosAceleracion() {
     pinMode(CH2, INPUT);
-    pinMode(ACCEL_PWM, OUTPUT);
-    // Configuración PWM ESP32
-    ledcAttachPin(ACCEL_PWM, 0); // Pin, canal 0
-    ledcSetup(0, 50, 8);         // Canal 0, 50 Hz, 8 bits
-    ledcWrite(0, 0);             // Duty inicial en 0
+    ledcAttachPin(ACCEL_PWM, 0);      // canal 0
+    ledcSetup(0, 50, 8);              // 50 Hz, 8 bits
+    ledcWrite(0, 0);
 }
-/* Lee canal 2 (Pixhawk) y actualiza el duty de ACCEL_PWM */
-void AceleradorConPixhawk()
-{
-    /* Lee un pulso de hasta 25 ms; 0 → sin señal */
+
+/*––– procesa líneas UART que vengan de la RPi –––*/
+static void uartPoll() {
+    while (Serial.available()) {
+        char c = Serial.read();
+        if (c == '\n' || c == '\r') {
+            if (rxBuffer.equalsIgnoreCase("LISTO REVERSA"))
+                reverseReady = true;
+            rxBuffer = "";
+        } else {
+            rxBuffer += c;
+            if (rxBuffer.length() > 40) rxBuffer.remove(0);
+        }
+    }
+}
+
+/*––– mapea pulso → duty según límites –––*/
+static uint8_t mapDuty(uint32_t p1, uint32_t p2, bool invert = false) {
+    uint16_t duty = map(p1,
+                        invert ? PULSE_MIN_US : PULSE_NEU_US + DZ_US,
+                        invert ? PULSE_NEU_US - DZ_US : PULSE_MAX_US,
+                        DUTY_MAX, DUTY_MIN);
+    return constrain(duty, DUTY_MIN, DUTY_MAX);
+}
+
+void AceleradorConPixhawk() {
+    uartPoll();                             // ① atiende UART
+
     uint32_t pulse = pulseIn(CH2, HIGH, 25000);
 
-    /* Si no hay señal → motor a reposo */
+    /* sin señal: reset total */
     if (pulse == 0) {
         ledcWrite(0, 0);
+        if (relayCmdSent) EnviarMensaje("RELAY_REV_OFF");
+        mode           = Mode::NEU;
+        relayCmdSent   = false;
+        reverseReady   = false;
         return;
     }
 
-    /* Aplica zona muerta (± ZonaMuerta) */
-    if (pulse < PulsoMinimoPix + ZonaMuerta) {
-        ledcWrite(0, 0);
-        return;
+    /* decidir dirección */
+    if (pulse > PULSE_NEU_US + DZ_US) {                 // avance
+        if (mode == Mode::REV_WAIT || mode == Mode::REV_RUN)
+            EnviarMensaje("RELAY_REV_OFF");
+        mode         = Mode::FWD;
+        relayCmdSent = reverseReady = false;
+    }
+    else if (pulse < PULSE_NEU_US - DZ_US) {            // reversa
+        if (!relayCmdSent) {                            // enviar una vez
+            EnviarMensaje("RELAY_REV_ON");
+            relayCmdSent = true;
+            reverseReady = false;
+        }
+        mode = reverseReady ? Mode::REV_RUN : Mode::REV_WAIT;
+    }
+    else {                                              // neutro
+        if (mode == Mode::REV_WAIT || mode == Mode::REV_RUN)
+            EnviarMensaje("RELAY_REV_OFF");
+        mode         = Mode::NEU;
+        relayCmdSent = reverseReady = false;
     }
 
-    /* Constrain + map: 1000-2000 µs → DutyMinimo-DutyMaximo */
-    pulse = constrain(pulse, PulsoMinimoPix, PulsoMaximoPix);
-    uint16_t duty = map(pulse, PulsoMinimoPix, PulsoMaximoPix, DutyMinimo, DutyMaximo);
+    /* aplicar PWM según estado */
+    switch (mode) {
 
-    ledcWrite(0, duty);
+      case Mode::FWD:
+          ledcWrite(0, mapDuty(pulse, PULSE_MAX_US));
+          break;
+
+      case Mode::REV_RUN:
+          ledcWrite(0, mapDuty(pulse, PULSE_NEU_US, true)); // invertido
+          break;
+
+      default:                                           // NEU o REV_WAIT
+          ledcWrite(0, 0);
+          break;
+    }
 }
