@@ -2,6 +2,12 @@
 #include <ArduinoOTA.h>
 #include <WiFi.h>
 
+static constexpr uint16_t  PulsoMinimoPix = -100;  // pulso mínimo Pixhawk
+static constexpr uint16_t  PulsoMaximoPix = 100;  // pulso máximo Pixhawk
+static constexpr uint8_t   DutyMinimo     = 40;    // duty mínimo que admite tu ESC
+static constexpr uint8_t   DutyMaximo    = 150;   // duty máximo
+static constexpr uint8_t   ZonaMuerta = 40;    // ~±40 µs ≈ ±2 % de zona muerta
+
 // UART0 → ya es Serial (GPIO1 = TX0, GPIO3 = RX0)
 
 void InicializaUart(long baud) {
@@ -54,4 +60,34 @@ void InicializaOTA() {
   });
 
   ArduinoOTA.begin();
+}
+void InicializaParametrosAceleracion()
+{
+    pinMode(CH2, INPUT);
+    pinMode(ACCEL_PWM, OUTPUT);
+    analogWrite(ACCEL_PWM, 0);          // asegura reposo
+}
+/* Lee canal 2 (Pixhawk) y actualiza el duty de ACCEL_PWM */
+void AceleradorConPixhawk()
+{
+    /* Lee un pulso de hasta 25 ms; 0 → sin señal */
+    uint32_t pulse = pulseIn(CH2, HIGH, 25000);
+
+    /* Si no hay señal → motor a reposo */
+    if (pulse == 0) {
+        analogWrite(ACCEL_PWM, 0);
+        return;
+    }
+
+    /* Aplica zona muerta (± ZonaMuerta) */
+    if (pulse < PulsoMinimoPix + ZonaMuerta) {
+        analogWrite(ACCEL_PWM, 0);
+        return;
+    }
+
+    /* Constrain + map: 1000-2000 µs → DutyMinimo-DutyMaximo */
+    pulse = constrain(pulse, PulsoMinimoPix, PulsoMaximoPix);
+    uint16_t duty = map(pulse, PulsoMinimoPix, PulsoMaximoPix, DutyMinimo, DutyMaximo);
+
+    analogWrite(ACCEL_PWM, duty);
 }
