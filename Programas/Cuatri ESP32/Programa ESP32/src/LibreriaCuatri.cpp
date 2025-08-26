@@ -34,7 +34,18 @@ bool RecibirMensaje(String& txt) {
 /* ========= Wi-Fi ========= */
 void InicializaWiFi(const char* ssid, const char* pass) {
     WiFi.begin(ssid, pass);
-    while (WiFi.status() != WL_CONNECTED) delay(300);
+    while (WiFi.status() != WL_CONNECTED) {
+        delay(500);
+        EnviarMensaje("Conectando a WiFi...");
+    }
+    if (WiFi.status() == WL_CONNECTED) {
+        EnviarMensaje("Conectado a WiFi");
+        EnviarMensaje("Dirección IP: " + WiFi.localIP().toString());
+    } else
+    {
+        EnviarMensaje("Error al conectar a WiFi");
+    }
+    
 }
 
 /* ========= OTA ========= */
