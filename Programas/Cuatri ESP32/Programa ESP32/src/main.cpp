@@ -4,11 +4,26 @@
 #include <WiFi.h>
 
 //defino la conexion a WiFi
-const char* ssid=("Aca va el ssid del WiFi PRuebo");
-const char* contraseña=("aca va la contraseña del WiFi");
+const char* ssid = "JuanRondon";
+const char* contrasena = "Manuela23";
+
 void setup() {
   InicializaUart();  // Inicializa UART0 con 115200 baudios
-  InicializaWiFi(ssid,contraseña); //hago el llamado desde el main para que se conecte al WiFi
+
+  InicializaWiFi(ssid, contrasena); //hago el llamado desde el main para que se conecte al WiFi
+
+  // Espera a la conexión WiFi y envía mensaje según el resultado
+  int intentos = 0;
+  while (WiFi.status() != WL_CONNECTED && intentos < 20) {
+    delay(500);
+    intentos++;
+  }
+  if (WiFi.status() == WL_CONNECTED) {
+    EnviarMensaje("Conexión WiFi exitosa: " + String(WiFi.localIP()));
+  } else {
+    EnviarMensaje("Error al conectar a WiFi");
+  }
+
   InicializaOTA();
   InicializaParametrosAceleracion();          // deja pines listos
   delay(1000);
