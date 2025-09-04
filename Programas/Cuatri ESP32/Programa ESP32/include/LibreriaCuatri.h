@@ -3,8 +3,11 @@
 
 #include <Arduino.h>
 
-#define CH2          4          // entrada PWM proveniente del Pixhawk
+#define CH2          4          // entrada PWM proveniente del Pixhawk (acelerador)
 #define ACCEL_PWM    17         // salida PWM hacia el ESC o driver
+
+#define CH1        5   // entrada PWM del Pixhawk (dirección)
+#define STEER_PWM 16   // salida PWM al servo de dirección
 
 void InicializaUart(long baud = 115200); //Funcion para llamar que inicializa comunicacion UART
 void EnviarMensaje(const String& mensaje); //Funcion para llamar que envia mensaje por UART (STRING)
@@ -13,4 +16,7 @@ void InicializaWiFi(const char* ssid, const char* contrasena); //Funcion que ini
 void InicializaOTA(); //Funcion que inicializa OTA
 void  InicializaParametrosAceleracion();     // configura pines y duty cero
 void  AceleradorConPixhawk();       // debe llamarse en cada loop()
+void InicializaParametrosDireccion();
+void DireccionConPixhawk();
+
 #endif

@@ -138,3 +138,27 @@ void AceleradorConPixhawk() {
           break;
     }
 }
+
+/*–––Decicion de Giro––*/
+    void InicializaParametrosDireccion() {
+    pinMode(CH1, INPUT);                 // Entrada PWM desde Pixhawk 
+    ledcAttachPin(STEER_PWM, 1);         
+    ledcSetup(1, 50, 8);                 
+    ledcWrite(1, 0);                     // Comienza en 0 (servo al centro)
+}
+
+void DireccionConPixhawk() {
+    uint32_t pulse = pulseIn(CH1, HIGH, 25000); 
+
+    if (pulse == 0) {
+        ledcWrite(1, 0);   // si no hay señal, servo apagado / centrado
+        return;
+    }
+
+    // Mapeo de 1000–2000 µs a rango de duty
+    uint8_t duty = map(pulse, PULSE_MIN_US, PULSE_MAX_US, DUTY_MIN, DUTY_MAX);
+    duty = constrain(duty, DUTY_MIN, DUTY_MAX);
+
+    ledcWrite(1, (DUTY_MIN + DUTY_MAX) / 2);  // // Mapea joystick del Pixhawk (izquierda-derecha) a servo de dirección
+
+}
