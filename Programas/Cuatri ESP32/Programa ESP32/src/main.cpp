@@ -4,8 +4,8 @@
 #include <WiFi.h>
 
 //defino la conexion a WiFi
-const char* ssid = ("JuanRondon");
-const char* contrasena = ("Manuela23");
+const char* ssid = ("ESPcuatri");
+const char* contrasena = ("TeamCIT2024");
 void setup() {
   InicializaUart();  // Inicializa UART0 con 115200 baudios
   InicializaWiFi(ssid,contrasena); //hago el llamado desde el main para que se conecte al WiFi

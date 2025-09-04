@@ -33,25 +33,16 @@ bool RecibirMensaje(String& txt) {
 
 /* ========= Wi-Fi ========= */
 void InicializaWiFi(const char* ssid, const char* pass) {
-    WiFi.begin(ssid, pass);
-    while (WiFi.status() != WL_CONNECTED) {
-        delay(500);
-        EnviarMensaje("Conectando a WiFi...");
-    }
-    if (WiFi.status() == WL_CONNECTED) {
-        EnviarMensaje("Conectado a WiFi");
-        EnviarMensaje("Dirección IP: " + WiFi.localIP().toString());
-    } else
-    {
-        EnviarMensaje("Error al conectar a WiFi");
-    }
+    Wifi.mode(WIFI_AP);
+    WiFi.softAP(ssid, password);
+    IPAddress IP = WiFi.softAPIP();
+    Serial.print("AP IP address: ");
+    Serial.println(IP);
     
 }
 
 /* ========= OTA ========= */
 void InicializaOTA() {
-    ArduinoOTA.setHostname("cuatri-esp32");
-
     ArduinoOTA.onStart([]() {
         EnviarMensaje("*** OTA INICIO ***");
     });
