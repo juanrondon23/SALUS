@@ -33,8 +33,8 @@ bool RecibirMensaje(String& txt) {
 
 /* ========= Wi-Fi ========= */
 void InicializaWiFi(const char* ssid, const char* pass) {
-    Wifi.mode(WIFI_AP);
-    WiFi.softAP(ssid, password);
+    WiFi.mode(WIFI_AP);
+    WiFi.softAP(ssid, pass);
     IPAddress IP = WiFi.softAPIP();
     Serial.print("AP IP address: ");
     Serial.println(IP);
