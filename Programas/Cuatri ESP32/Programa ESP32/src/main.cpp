@@ -13,7 +13,7 @@ void setup() {
   InicializaWiFi(ssid, contrasena); //hago el llamado desde el main para que se conecte al WiFi
   InicializaOTA();
   InicializaParametrosAceleracion(); 
-  InicializaParametrosDireccion();         // deja pines listos
+  InicializaParametrosDireccion();        
   delay(1000);
   EnviarMensaje("ESP32 conectado a Raspberry Pi");
 }
@@ -25,7 +25,7 @@ void loop() {
     EnviarMensaje("Mensaje recibido: " + mensaje);
   }
   AceleradorConPixhawk(); //llama a la funcion que lee el PWM del Pixhawk y lo envia al ESC
-   DireccionConPixhawk();    // controla dirección 
+   DireccionConPixhawk();    //controla dirección 
   ArduinoOTA.handle(); //Importante para el funcionamiento del OTA llama a la ESP a revisar el estado 
   delay(30);
 }
