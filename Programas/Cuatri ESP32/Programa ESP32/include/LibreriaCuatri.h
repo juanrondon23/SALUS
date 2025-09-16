@@ -1,6 +1,6 @@
 #ifndef LIBRERIA_CUATRI_H
 #define LIBRERIA_CUATRI_H
-
+#include <TelnetStream.h>
 #include <Arduino.h>
 
 #define CH2          4          // entrada PWM proveniente del Pixhawk
@@ -13,4 +13,6 @@ void InicializaWiFi(const char* ssid, const char* contrasena); //Funcion que ini
 void InicializaOTA(); //Funcion que inicializa OTA
 void  InicializaParametrosAceleracion();     // configura pines y duty cero
 void  AceleradorConPixhawk();       // debe llamarse en cada loop()
+void InicializaTelnet();
+void EnviarMensajeTelnet(const String& txt); // Envía mensaje por Telnet
 #endif

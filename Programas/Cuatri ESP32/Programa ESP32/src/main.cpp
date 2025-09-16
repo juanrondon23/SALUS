@@ -2,7 +2,7 @@
 #include "../include/LibreriaCuatri.h"
 #include <ArduinoOTA.h>
 #include <WiFi.h>
-
+#include <TelnetStream.h>
 //defino la conexion a WiFi
 const char* ssid = ("ESPcuatri");
 const char* contrasena = ("TeamCIT2024");
@@ -12,6 +12,7 @@ void setup() {
   InicializaOTA();
   InicializaParametrosAceleracion();          // deja pines listos
   delay(1000);
+  InicializaTelnet(); // Inicia Telnet
   EnviarMensaje("ESP32 conectado a Raspberry Pi");
 }
 
@@ -22,7 +23,8 @@ void loop() {
     EnviarMensaje("Mensaje recibido: " + mensaje);
   }
   AceleradorConPixhawk(); //llama a la funcion que lee el PWM del Pixhawk y lo envia al ESC
-  ArduinoOTA.handle(); //Importante para el funcionamiento del OTA llama a la ESP a revisar el estado 
+  ArduinoOTA.handle(); //Importante para el funcionamiento del OTA llama a la ESP a revisar el estado
+  EnviarMensajeTelnet("Mensaje enviado por Telnet");
   delay(30);
 }
 

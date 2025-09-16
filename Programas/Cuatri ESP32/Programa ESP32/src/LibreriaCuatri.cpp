@@ -1,7 +1,7 @@
 #include "LibreriaCuatri.h"
 #include <WiFi.h>
 #include <ArduinoOTA.h>
-
+#include <TelnetStream.h>
 /*─────── PWM / Pulsos ─────────────────────────*/
 static constexpr uint16_t PULSE_MIN_US = 1000;   // –100 %
 static constexpr uint16_t PULSE_NEU_US = 1500;   //    0 %
@@ -55,6 +55,13 @@ void InicializaOTA() {
     ArduinoOTA.begin();
 }
 
+void InicializaTelnet() {// Inicia Telnet
+  TelnetStream.begin();
+  TelnetStream.println("Conexión Telnet lista!");
+}
+void EnviarMensajeTelnet(const String& txt) { // Envía mensaje por Telnet
+  TelnetStream.println(txt);
+}
 /* ========= PWM & acelerador ========= */
 void InicializaParametrosAceleracion() {
     pinMode(CH2, INPUT);
