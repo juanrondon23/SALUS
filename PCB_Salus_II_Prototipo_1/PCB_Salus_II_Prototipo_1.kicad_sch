@@ -5217,12 +5217,6 @@
 		(uuid "2fe5f1b1-a8f2-4736-b901-4ffdb8bc2ff6")
 	)
 	(junction
-		(at 259.08 19.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4505cc2f-87d3-454b-ac49-b89a614d2a45")
-	)
-	(junction
 		(at 209.55 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5245,6 +5239,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "99fbfb8b-d992-44b5-ac51-4f34f32a5f7a")
+	)
+	(junction
+		(at 259.08 19.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf0dded3-bfa2-4c46-808b-609251cd9e73")
 	)
 	(junction
 		(at 241.3 48.26)
@@ -5296,16 +5296,6 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 52.07) (xy 254 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11c700bc-3c84-4bfc-afcb-f91ef53e313d")
-	)
-	(wire
-		(pts
 			(xy 264.16 96.52) (xy 271.78 96.52)
 		)
 		(stroke
@@ -5313,6 +5303,16 @@
 			(type default)
 		)
 		(uuid "1304e9a1-27c6-47d0-9a6f-9bb6e3364fad")
+	)
+	(wire
+		(pts
+			(xy 267.97 27.94) (xy 267.97 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15136154-3157-4cbd-8264-aa3c0508277a")
 	)
 	(wire
 		(pts
@@ -5346,7 +5346,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 17.78) (xy 259.08 17.78)
+			(xy 223.52 17.78) (xy 250.19 17.78)
 		)
 		(stroke
 			(width 0)
@@ -5716,13 +5716,23 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 52.07) (xy 243.84 52.07)
+			(xy 241.3 52.07) (xy 254 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8756e4ba-0599-472b-b6a2-bbb591f031f1")
+	)
+	(wire
+		(pts
+			(xy 257.81 17.78) (xy 259.08 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90031f82-d275-42cb-80ff-0fa9f8af6279")
 	)
 	(wire
 		(pts
@@ -5776,6 +5786,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 27.94) (xy 267.97 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6ccfbb7-2e43-4157-859a-376540b44ea5")
+	)
+	(wire
+		(pts
 			(xy 53.34 167.64) (xy 53.34 176.53)
 		)
 		(stroke
@@ -5803,16 +5823,6 @@
 			(type default)
 		)
 		(uuid "ae03d18d-39b8-46a9-9949-f836ec986a0d")
-	)
-	(wire
-		(pts
-			(xy 259.08 19.05) (xy 259.08 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b128ad12-9154-47f6-a251-7ceb05be5405")
 	)
 	(wire
 		(pts
@@ -5863,6 +5873,16 @@
 			(type default)
 		)
 		(uuid "bc441f76-697e-4b2b-93a7-8867e000665d")
+	)
+	(wire
+		(pts
+			(xy 259.08 19.05) (xy 259.08 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfe97c2b-d15b-4a14-95f7-7726328b1262")
 	)
 	(wire
 		(pts
@@ -5943,6 +5963,16 @@
 			(type default)
 		)
 		(uuid "cfadb23c-cb73-451d-b9d3-1555e65ab468")
+	)
+	(wire
+		(pts
+			(xy 259.08 22.86) (xy 267.97 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d34886f1-26fc-4e7c-afa1-5209e9047e1e")
 	)
 	(wire
 		(pts
@@ -6063,6 +6093,16 @@
 			(type default)
 		)
 		(uuid "ff27420d-157c-42b6-a1b1-5e1f425f79b7")
+	)
+	(text "Vin y GND, en el Driver Motor, estan al reves en la PCB.\n\nComo esta puesto en el esquematico ahora \nesta bien."
+		(exclude_from_sim no)
+		(at 270.764 41.148 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8ff80378-f7b7-4aab-b05d-04fb6ce3d779")
 	)
 	(text "SISTEMA SEGURIDAD 5V\n"
 		(exclude_from_sim no)
@@ -7678,28 +7718,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape input)
-		(at 259.08 27.94 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cc71339e-a0a2-4b7e-a793-936e956652c3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 265.9357 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "5V"
 		(shape input)
 		(at 154.94 115.57 270)
@@ -7762,6 +7780,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 259.08 25.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d38a1c83-58ae-4078-8372-8ba9d32ac120")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 265.9357 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -10339,74 +10379,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
-		(at 247.65 52.07 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ddc6d79-7cae-4729-a08a-ceccdcca35b8")
-		(property "Reference" "F1"
-			(at 247.65 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Fuse"
-			(at 247.65 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Eaton_1A5601-01_Inline_P20.80x6.76mm_D1.70mm_Horizontal"
-			(at 247.65 53.848 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 247.65 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fuse"
-			(at 247.65 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f219e372-6822-4095-95ac-5009be2c0fef")
-		)
-		(pin "1"
-			(uuid "af6f3eaf-1893-465b-bdc8-3251b472f597")
-		)
-		(instances
-			(project ""
-				(path "/ba46b43d-a80c-4bb9-8819-4a9c21f18053"
-					(reference "F1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 135.89 124.46 0)
 		(unit 1)
@@ -11619,6 +11591,74 @@
 			(project "PCB_Salus_II_Prototipo_1"
 				(path "/ba46b43d-a80c-4bb9-8819-4a9c21f18053"
 					(reference "K2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 254 17.78 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be778e20-a1da-4a52-8599-b8855db25500")
+		(property "Reference" "F1"
+			(at 254 11.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fuse"
+			(at 254 13.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Eaton_1A5601-01_Inline_P20.80x6.76mm_D1.70mm_Horizontal"
+			(at 254 19.558 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 254 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "82b51d3b-7f5d-4b08-98e9-dd948a180b7d")
+		)
+		(pin "1"
+			(uuid "0af84471-fa51-4d24-a014-8f7b072f07e3")
+		)
+		(instances
+			(project "PCB_Salus_II_Prototipo_1"
+				(path "/ba46b43d-a80c-4bb9-8819-4a9c21f18053"
+					(reference "F1")
 					(unit 1)
 				)
 			)

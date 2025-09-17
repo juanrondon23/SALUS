@@ -12,7 +12,7 @@ void setup() {
   InicializaOTA();
   InicializaParametrosAceleracion();          // deja pines listos
   delay(1000);
-  EnviarMensaje("ESP32 conectado a Raspberry Pi");
+  
 }
 
 void loop() {
@@ -23,6 +23,7 @@ void loop() {
   }
   AceleradorConPixhawk(); //llama a la funcion que lee el PWM del Pixhawk y lo envia al ESC
   ArduinoOTA.handle(); //Importante para el funcionamiento del OTA llama a la ESP a revisar el estado 
+  EnviarMensaje("ESP32 conectado a Raspberry Pi");
   delay(30);
 }
 
