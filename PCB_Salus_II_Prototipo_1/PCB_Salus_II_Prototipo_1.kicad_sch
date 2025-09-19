@@ -5386,6 +5386,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 160.02) (xy 142.24 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28ecc9b6-5599-49c6-a297-b44b00675bc7")
+	)
+	(wire
+		(pts
 			(xy 95.25 170.18) (xy 95.25 179.07)
 		)
 		(stroke
@@ -5676,6 +5686,36 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 139.7) (xy 132.08 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6af534b2-e42a-4558-b014-55079c34e3d7")
+	)
+	(wire
+		(pts
+			(xy 142.24 160.02) (xy 142.24 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f443b7e-ed65-4973-b76b-7699a00952bb")
+	)
+	(wire
+		(pts
+			(xy 140.97 176.53) (xy 124.46 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71e551f5-a5d2-4757-a79f-7b6ab4689b0c")
+	)
+	(wire
+		(pts
 			(xy 203.2 20.32) (xy 203.2 19.05)
 		)
 		(stroke
@@ -5773,6 +5813,16 @@
 			(type default)
 		)
 		(uuid "a6779b5c-0c37-437f-9725-e4628aa14eca")
+	)
+	(wire
+		(pts
+			(xy 124.46 176.53) (xy 124.46 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a82080e9-622f-411c-81d4-1ffc93f8bec1")
 	)
 	(wire
 		(pts
@@ -6063,6 +6113,16 @@
 			(type default)
 		)
 		(uuid "ff27420d-157c-42b6-a1b1-5e1f425f79b7")
+	)
+	(text "Se cambio la forma de conexion del Rele \npara que encienda, es de 5V el Relé.\nFalta editar la placa, esquematico ya editado\n"
+		(exclude_from_sim no)
+		(at 171.45 148.082 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "91717572-5c85-466b-a16f-65ab28a215d1")
 	)
 	(text "SISTEMA SEGURIDAD 5V\n"
 		(exclude_from_sim no)
@@ -6490,6 +6550,28 @@
 			)
 		)
 	)
+	(global_label "Rele5"
+		(shape input)
+		(at 124.46 144.78 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4d6d9352-e976-4101-891e-e34c246915d7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 116.1529 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "3V3"
 		(shape input)
 		(at 269.24 54.61 270)
@@ -6525,28 +6607,6 @@
 		(uuid "51bb7b40-5f25-4bee-9a6f-0d0f260206e0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 237.9957 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Rele5"
-		(shape input)
-		(at 156.21 176.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "545518a4-faef-41f0-90f7-2a2a29418dca")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.5171 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7185,6 +7245,28 @@
 		(uuid "97c26efa-4bda-436e-bc5e-284b800aab7b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 140.97 117.6043 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5V"
+		(shape input)
+		(at 156.21 176.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "982dcd37-1b0a-4377-90ab-902a73458686")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 161.4933 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8250,6 +8332,28 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape input)
+		(at 132.08 149.86 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f7ac7e59-83b2-4dfe-b326-b18925fa9e4f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 132.08 156.7157 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Acelerador"
 		(shape input)
 		(at 109.22 52.07 270)
@@ -8312,28 +8416,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape input)
-		(at 140.97 176.53 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "feab5f99-0701-43df-9d82-f9778513e9f6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.1143 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -11260,6 +11342,82 @@
 			(project "PCB_Salus_II_Prototipo_1"
 				(path "/ba46b43d-a80c-4bb9-8819-4a9c21f18053"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:IRLZ44N")
+		(at 129.54 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a07d8396-c188-42dd-9850-0969e2642444")
+		(property "Reference" "Q5"
+			(at 135.89 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IO26"
+			(at 135.89 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 134.62 146.685 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf"
+			(at 134.62 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "47A Id, 55V Vds, 22mOhm Rds Single N-Channel HEXFET Power MOSFET, TO-220AB"
+			(at 129.54 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9bf5cb50-21c7-48c5-8f4e-3e9f8ab02751")
+		)
+		(pin "1"
+			(uuid "1d5d3243-342d-4b98-8ea3-0f0377411f5e")
+		)
+		(pin "3"
+			(uuid "146f5f1e-6858-47fe-99a2-868b3b1f053e")
+		)
+		(instances
+			(project "PCB_Salus_II_Prototipo_1"
+				(path "/ba46b43d-a80c-4bb9-8819-4a9c21f18053"
+					(reference "Q5")
 					(unit 1)
 				)
 			)
