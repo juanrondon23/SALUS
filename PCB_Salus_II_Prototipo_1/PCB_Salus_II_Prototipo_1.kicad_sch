@@ -6094,6 +6094,16 @@
 		)
 		(uuid "ff27420d-157c-42b6-a1b1-5e1f425f79b7")
 	)
+	(text "Queda por modificar conexion Rele 5V\n\n"
+		(exclude_from_sim no)
+		(at 149.352 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1fd967da-2b78-46f3-87d1-e22ee9583a7f")
+	)
 	(text "Vin y GND, en el Driver Motor, estan al reves en la PCB.\n\nComo esta puesto en el esquematico ahora \nesta bien."
 		(exclude_from_sim no)
 		(at 270.764 41.148 0)
