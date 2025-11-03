@@ -1,4 +1,4 @@
-23765575749928268
+23767346924071595
 A000067
 Arduino_Mega2560_R3_Shield
 https://docs.arduino.cc/hardware/mega-2560
@@ -57553,6 +57553,13 @@ MODULE_ESP32_DEVKIT_V1
 0
 30
 30
+Huella_Rasp
+MODULE_RASPBERRY_PI_4B_4GB
+
+
+0
+48
+48
 Inductor_SMD
 L_6.3x6.3_H3
 Choke, SMD, 6.3x6.3mm 3mm height
