@@ -1896,6 +1896,139 @@
 				)
 			)
 		)
+		(symbol "Diode:1N62xxA"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N62xxA"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-201AE_P15.24mm_Horizontal"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/88301/15ke.pdf"
+				(at -1.27 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1500W unidirectional TRANSZORB® Transient Voltage Suppressor, DO-201AE"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode TVS voltage suppressor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D?DO?201AE*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N62xxA_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N62xxA_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "ESP32-DEVKITC-32D:ESP32-DEVKITC-32D"
 			(pin_names
 				(offset 1.016)
@@ -3850,6 +3983,12 @@
 		(uuid "b605af30-069b-47da-8d2e-4c2f2f501746")
 	)
 	(junction
+		(at 139.7 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bcb9dd01-5520-4ae8-a003-8b79456edc48")
+	)
+	(junction
 		(at 173.99 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4263,16 +4402,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 107.95) (xy 139.7 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "248875ca-df7a-46e4-9c73-9bdd35b0a6ab")
-	)
-	(wire
-		(pts
 			(xy 139.7 148.59) (xy 146.05 148.59)
 		)
 		(stroke
@@ -4323,6 +4452,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 107.95) (xy 139.7 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c2991f5-e154-4cdd-9bea-c2e66510f96f")
+	)
+	(wire
+		(pts
 			(xy 132.08 137.16) (xy 132.08 130.81)
 		)
 		(stroke
@@ -4360,6 +4499,16 @@
 			(type default)
 		)
 		(uuid "3141cdc8-cf68-4d56-9fb8-044ce616f160")
+	)
+	(wire
+		(pts
+			(xy 80.01 116.84) (xy 69.85 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35691813-e7b9-42ae-9816-dd6836562e8e")
 	)
 	(wire
 		(pts
@@ -4420,6 +4569,16 @@
 			(type default)
 		)
 		(uuid "3f0b47ab-6c29-4aeb-b0af-74c0fa6012b4")
+	)
+	(wire
+		(pts
+			(xy 80.01 109.22) (xy 80.01 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4168515b-af1c-4ba8-933b-9b832d94f5cc")
 	)
 	(wire
 		(pts
@@ -4750,6 +4909,16 @@
 			(type default)
 		)
 		(uuid "7e3f06e1-2303-4f0b-a06d-43fbc98bf272")
+	)
+	(wire
+		(pts
+			(xy 132.08 109.22) (xy 80.01 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81623927-d6fb-4288-ac7f-675857beeb0d")
 	)
 	(wire
 		(pts
@@ -5290,6 +5459,16 @@
 			(type default)
 		)
 		(uuid "e193640e-b380-4174-9bdc-b13993775a72")
+	)
+	(wire
+		(pts
+			(xy 139.7 109.22) (xy 139.7 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e297f1f6-4318-4646-a418-2630beadaa49")
 	)
 	(wire
 		(pts
@@ -8745,6 +8924,74 @@
 			(project ""
 				(path "/3613b1f1-6164-4a03-ab5f-c520c1df4874"
 					(reference "TRIGX3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N62xxA")
+		(at 135.89 109.22 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "955a7343-033f-4f34-a2fd-7871cfe4e269")
+		(property "Reference" "D1"
+			(at 135.89 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N62xxA"
+			(at 135.89 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-201AE_P15.24mm_Horizontal"
+			(at 135.89 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88301/15ke.pdf"
+			(at 137.16 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1500W unidirectional TRANSZORB® Transient Voltage Suppressor, DO-201AE"
+			(at 135.89 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "20b21a94-b0f0-49b8-9d49-d652c0fc0c45")
+		)
+		(pin "1"
+			(uuid "c903567f-0ea4-4c43-9288-ae2b8f12e0a9")
+		)
+		(instances
+			(project ""
+				(path "/3613b1f1-6164-4a03-ab5f-c520c1df4874"
+					(reference "D1")
 					(unit 1)
 				)
 			)
