@@ -6827,9 +6827,9 @@
 		)
 		(uuid "60dae9a6-fc89-4184-b58d-425e3c8e804b")
 	)
-	(text "En el diagrama de circuito esta dada vuelta la tira de pinas, eso hay que cambiarlo\n"
+	(text "En el diagrama de circuito esta dada vuelta la tira de pinas, eso hay que cambiarlo \nY agregar un Pin mas de 5V para que le de la corriente a la Rasp\n\n"
 		(exclude_from_sim no)
-		(at -34.544 135.382 0)
+		(at -21.336 131.064 0)
 		(effects
 			(font
 				(size 1.778 1.778)
