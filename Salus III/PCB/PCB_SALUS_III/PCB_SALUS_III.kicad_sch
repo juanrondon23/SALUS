@@ -6769,7 +6769,7 @@
 	)
 	(text "RASP"
 		(exclude_from_sim no)
-		(at 65.278 96.52 0)
+		(at 53.34 107.188 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6827,9 +6827,9 @@
 		)
 		(uuid "60dae9a6-fc89-4184-b58d-425e3c8e804b")
 	)
-	(text "En el diagrama de circuito esta dada vuelta la tira de pinas, eso hay que cambiarlo\n"
+	(text "En el diagrama de circuito esta dada vuelta la tira de pinas, eso hay que cambiarlo \nY agregar un Pin mas de 5V para que le de la corriente a la Rasp\n\n"
 		(exclude_from_sim no)
-		(at -34.544 135.382 0)
+		(at -21.336 131.064 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -6907,6 +6907,16 @@
 		)
 		(uuid "9fd623b7-bf20-4c0d-b219-1df832449276")
 	)
+	(text "Voy a modificar el valor de la resistencia del zener por una de 1K para que encienda correctamente"
+		(exclude_from_sim no)
+		(at 267.208 53.086 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a032c306-f5a2-4aec-be8d-0d16a8695d20")
+	)
 	(text "Gpio 16"
 		(exclude_from_sim no)
 		(at 61.976 154.94 0)
@@ -6919,7 +6929,7 @@
 	)
 	(text "ESP32\n"
 		(exclude_from_sim no)
-		(at 64.008 29.21 0)
+		(at 65.024 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
