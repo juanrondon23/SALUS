@@ -1,0 +1,3233 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "f80b8d68-a06a-4938-9f0c-580c57a122c6")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:D_Zener"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Zener diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Zener_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Simbolos:DC-005-5A-2.0"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -5.08 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "DC-005-5A-2.0"
+				(at -5.08 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "DC-005-5A-2.0:XKB_DC-005-5A-2.0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "XKB Industrial Precision"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "11 mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "Package"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/DC-005-5A-2.0/XKB+Connection/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "A0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/DC-005-5A-2.0/XKB+Connection/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "DC-005-5A-2.0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "\n                        \n                            DC Power Receptacle Jack, Through Hole，Right Angle\n                        \n"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "Not in stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "XKB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "DC-005-5A-2.0_0_0"
+				(arc
+					(start -4.445 3.175)
+					(mid -5.0772 2.54)
+					(end -4.445 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.5421 -3.3564)
+					(end 3.5379 2.9936)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 1.905) (xy 1.27 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 3.175) (xy 1.27 3.175)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -1.27) (xy -5.08 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -3.81 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 2.54 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.905) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.175) (xy 1.27 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.81) (xy 1.27 3.175)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 0 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -1.27) (xy 0.635 -1.27) (xy 0 -2.54) (xy -0.635 -1.27)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Simbolos:IRFR5305TRPBF"
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 11.43 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "IRFR5305TRPBF"
+				(at 11.43 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "IRFR5305TRPBF"
+				(at 11.43 -98.73 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.infineon.com/dgdl/irfr5305pbf.pdf?fileId=5546d462533600a401535632522820ff"
+				(at 11.43 -198.73 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "-55V Single P-Channel HEXFET Power MOSFET in a D-Pak package"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "2.507"
+				(at 11.43 -398.73 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "942-IRFR5305TRPBF"
+				(at 11.43 -498.73 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRFR5305TRPBF?qs=NFlznGuI7112KuIDPbxMDg%3D%3D"
+				(at 11.43 -598.73 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Infineon"
+				(at 11.43 -698.73 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "IRFR5305TRPBF"
+				(at 11.43 -798.73 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "IRFR5305TRPBF_1_1"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 5.08) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.842 -0.508) (xy 5.842 0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.842 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.842 2.032) (xy 5.842 3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.842 5.588) (xy 5.842 4.572)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 5.842 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 7.62 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 5.842 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 6.604 3.048) (xy 6.604 2.032) (xy 7.62 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 6.35 2.54)
+					(radius 3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 10.16 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 260.35 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "060ebcb2-9dfa-49df-b707-c7e41fbf5b78")
+	)
+	(junction
+		(at 260.35 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "15866d5f-cb08-494f-9f5b-3d8bf0fcefac")
+	)
+	(junction
+		(at 260.35 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16850018-17c9-4c05-a7b0-dbb08b4324ff")
+	)
+	(junction
+		(at 260.35 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16bcb6e4-c450-40cf-9ec1-7293c3a8de68")
+	)
+	(junction
+		(at 260.35 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c9457cf-698c-4273-b014-315e0617274e")
+	)
+	(junction
+		(at 226.06 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d2b647b-d7eb-4157-ae80-952449ee7bbe")
+	)
+	(junction
+		(at 226.06 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b88a3426-e74e-422e-b314-e24bbfc59ede")
+	)
+	(junction
+		(at 234.95 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c184eac7-9452-42a3-864a-abb69d2657b2")
+	)
+	(junction
+		(at 260.35 19.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dfb9042a-a49f-41a0-8815-8c4b3bdb7238")
+	)
+	(junction
+		(at 236.22 19.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2641587-f57c-4587-b2ce-34dfc31349b6")
+	)
+	(no_connect
+		(at 267.97 30.48)
+		(uuid "250a23c4-9f5a-4732-9554-02268d18a1a7")
+	)
+	(no_connect
+		(at 327.66 17.78)
+		(uuid "6a103fb6-1603-42a5-a638-83dad87efa48")
+	)
+	(no_connect
+		(at 267.97 74.93)
+		(uuid "ee76c4ff-797c-4ff8-b06a-c323cc0e4751")
+	)
+	(wire
+		(pts
+			(xy 234.95 63.5) (xy 260.35 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01cf508c-2748-47de-b250-acdd493bb77a")
+	)
+	(wire
+		(pts
+			(xy 266.7 77.47) (xy 267.97 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1651df86-a496-4d01-980a-f3bc84ab91ab")
+	)
+	(wire
+		(pts
+			(xy 266.7 19.05) (xy 266.7 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a66cde0-46e5-49f9-a9fa-37d75ba93c1c")
+	)
+	(wire
+		(pts
+			(xy 236.22 19.05) (xy 260.35 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b3eb442-b01c-483b-889e-dc5997e7802f")
+	)
+	(wire
+		(pts
+			(xy 254 30.48) (xy 260.35 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c326c2a-d468-4f5c-95c9-e574ff83acd4")
+	)
+	(wire
+		(pts
+			(xy 260.35 30.48) (xy 260.35 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1caacbfd-8712-479a-95fc-5af5156c9979")
+	)
+	(wire
+		(pts
+			(xy 266.7 72.39) (xy 266.7 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cf5cae6-a312-462f-969a-a6f9509eed13")
+	)
+	(wire
+		(pts
+			(xy 214.63 73.66) (xy 214.63 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d9e0a85-886d-4551-b566-addb3b2cb447")
+	)
+	(wire
+		(pts
+			(xy 229.87 81.28) (xy 229.87 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1de5e4da-df00-4eea-896e-15e0d0b60154")
+	)
+	(wire
+		(pts
+			(xy 214.63 29.21) (xy 214.63 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26c3f2ad-05a1-438f-89a8-3ee933f61d10")
+	)
+	(wire
+		(pts
+			(xy 234.95 63.5) (xy 234.95 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cced4eb-0708-45ff-85f0-ecc939cef1d2")
+	)
+	(wire
+		(pts
+			(xy 236.22 38.1) (xy 231.14 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "340834cf-837c-4689-9842-fbc034a2bf5f")
+	)
+	(polyline
+		(pts
+			(xy 190.5 11.43) (xy 190.5 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3eb29268-883e-4f74-b5dc-debf9d67eef8")
+	)
+	(wire
+		(pts
+			(xy 260.35 30.48) (xy 260.35 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "401275d2-7904-4da8-ba80-6a7bb6568d51")
+	)
+	(wire
+		(pts
+			(xy 217.17 34.29) (xy 226.06 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4598a906-4f10-4455-987c-3ba6c7ec9dcb")
+	)
+	(wire
+		(pts
+			(xy 266.7 45.72) (xy 260.35 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c7ca461-c31a-4da2-a5ce-ff3e6d3860b0")
+	)
+	(wire
+		(pts
+			(xy 226.06 45.72) (xy 260.35 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4efee194-7dc6-4e73-aab9-7660df40afb8")
+	)
+	(wire
+		(pts
+			(xy 266.7 27.94) (xy 267.97 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "500069ff-0ae4-48a0-ac17-0246e8b43db8")
+	)
+	(wire
+		(pts
+			(xy 231.14 34.29) (xy 226.06 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50107216-32bf-4ad0-9551-115aaaccaea4")
+	)
+	(wire
+		(pts
+			(xy 242.57 71.12) (xy 242.57 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57c1ac84-db0d-4895-ba2e-b8fc41ecaf19")
+	)
+	(wire
+		(pts
+			(xy 260.35 63.5) (xy 260.35 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ee4f79d-c97b-4235-9834-f1ac6215e7ab")
+	)
+	(wire
+		(pts
+			(xy 266.7 77.47) (xy 266.7 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62a32887-9938-41c4-a433-4e39ac476173")
+	)
+	(polyline
+		(pts
+			(xy 190.5 53.34) (xy 190.5 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67db7678-b6d8-4c45-8963-00e62b00faaa")
+	)
+	(wire
+		(pts
+			(xy 260.35 74.93) (xy 260.35 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73e37aed-d4f5-44b0-abdc-2fdeab396ecc")
+	)
+	(wire
+		(pts
+			(xy 236.22 19.05) (xy 236.22 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7532677f-3868-4b4f-9018-20956f633fd6")
+	)
+	(wire
+		(pts
+			(xy 254 74.93) (xy 260.35 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d0438e9-6911-4f29-b44b-b2215aa4761e")
+	)
+	(wire
+		(pts
+			(xy 266.7 63.5) (xy 260.35 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82d3bd10-6c69-40d1-a7df-5a7d5bc74504")
+	)
+	(wire
+		(pts
+			(xy 266.7 33.02) (xy 267.97 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8675cedd-34ef-4c8c-a6e9-b697c58f0ba8")
+	)
+	(polyline
+		(pts
+			(xy 190.5 97.79) (xy 284.48 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8819cf22-6138-4fd3-aa02-78bb81422b05")
+	)
+	(wire
+		(pts
+			(xy 217.17 78.74) (xy 226.06 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "894beec0-0423-4ebd-b64d-acfe556f191c")
+	)
+	(wire
+		(pts
+			(xy 231.14 38.1) (xy 231.14 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "921872b9-5c87-417e-ab59-1d2e727d046b")
+	)
+	(wire
+		(pts
+			(xy 243.84 27.94) (xy 243.84 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95db541c-4267-4ff9-ac85-eb8c74f52e8d")
+	)
+	(wire
+		(pts
+			(xy 214.63 63.5) (xy 234.95 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96548cfc-6d76-4f19-817c-65f4005b170a")
+	)
+	(polyline
+		(pts
+			(xy 190.5 53.34) (xy 284.48 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98db65f2-8bfc-48e0-ab8c-239a2e4e9ce6")
+	)
+	(wire
+		(pts
+			(xy 229.87 78.74) (xy 226.06 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a036c1f1-36f0-4584-9b11-054adc8567b8")
+	)
+	(wire
+		(pts
+			(xy 226.06 34.29) (xy 226.06 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a265b465-1424-46d1-a549-4a8c96548fff")
+	)
+	(wire
+		(pts
+			(xy 209.55 29.21) (xy 214.63 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a641004e-235d-41cd-ac3f-a3e44dc7775b")
+	)
+	(wire
+		(pts
+			(xy 242.57 74.93) (xy 246.38 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb389012-b70b-4953-9861-880d8b5ccb52")
+	)
+	(wire
+		(pts
+			(xy 260.35 45.72) (xy 260.35 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbde8cb6-ecc2-4354-a077-490574a5a219")
+	)
+	(wire
+		(pts
+			(xy 243.84 30.48) (xy 246.38 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfd64595-1ffa-483e-aa9f-ca2d5767d7ef")
+	)
+	(wire
+		(pts
+			(xy 266.7 90.17) (xy 260.35 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c01f6fa6-1bc2-4ed7-99d2-e7487ab56b1b")
+	)
+	(wire
+		(pts
+			(xy 266.7 19.05) (xy 260.35 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1d6a4fd-fffd-4da5-9a04-8613e8362a4f")
+	)
+	(wire
+		(pts
+			(xy 266.7 72.39) (xy 267.97 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5d3cbd2-38a3-4529-bd1e-7370990f79e2")
+	)
+	(wire
+		(pts
+			(xy 266.7 33.02) (xy 266.7 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d542e61b-6455-493f-80c3-810ff61191cb")
+	)
+	(wire
+		(pts
+			(xy 226.06 78.74) (xy 226.06 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d801ca96-adc8-4d75-92c8-1de266744cb9")
+	)
+	(wire
+		(pts
+			(xy 214.63 19.05) (xy 236.22 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcfad318-d757-4113-a06b-686698fdd739")
+	)
+	(wire
+		(pts
+			(xy 234.95 81.28) (xy 229.87 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de365c8a-3d42-400f-959b-1483e68dcac1")
+	)
+	(wire
+		(pts
+			(xy 209.55 73.66) (xy 214.63 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0e1524d-51ec-4354-825a-1650930720fa")
+	)
+	(wire
+		(pts
+			(xy 226.06 90.17) (xy 260.35 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9b07829-9537-497f-8278-4601130fc51c")
+	)
+	(wire
+		(pts
+			(xy 260.35 90.17) (xy 260.35 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed1196e0-7576-4dc3-b119-508863d2b9f1")
+	)
+	(wire
+		(pts
+			(xy 260.35 74.93) (xy 260.35 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edcd1fae-22c3-4d50-9644-cc259a35c0d4")
+	)
+	(wire
+		(pts
+			(xy 260.35 19.05) (xy 260.35 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9914e41-303a-4384-a8f6-e7676f725301")
+	)
+	(text "SISTEMA SEGURIDAD 5V\n"
+		(exclude_from_sim no)
+		(at 239.268 13.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1aa85437-aaaa-4a5d-8ad6-d831b478b6fa")
+	)
+	(text "SISTEMA SEGURIDAD 7V\n"
+		(exclude_from_sim no)
+		(at 238.252 58.674 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ada6d789-67e7-4ca8-b582-8ccd0a071859")
+	)
+	(global_label "GND"
+		(shape input)
+		(at 226.06 90.17 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0e301b7a-221f-40a2-ba24-818574498fc8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 226.06 97.0257 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5V"
+		(shape input)
+		(at 209.55 44.45 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "17cbb784-fa5e-464a-872a-9b6c4a67454b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 209.55 49.7333 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 226.06 45.72 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1cc82a4c-98a0-427c-aa62-537559012eec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 226.06 52.5757 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "7V"
+		(shape input)
+		(at 209.55 88.9 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4947c281-f284-4f12-aa83-072564f827cc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 209.55 94.1833 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simbolos:IRFR5305TRPBF")
+		(at 242.57 71.12 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1267e18b-a698-45d2-97f0-3dc99acbe7f8")
+		(property "Reference" "Q3"
+			(at 231.14 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IRFR5305TRPBF"
+			(at 231.14 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Footprints:IRFR5305TRPBF"
+			(at 231.14 -27.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/irfr5305pbf.pdf?fileId=5546d462533600a401535632522820ff"
+			(at 231.14 -127.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "-55V Single P-Channel HEXFET Power MOSFET in a D-Pak package"
+			(at 242.57 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "2.507"
+			(at 231.14 -327.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "942-IRFR5305TRPBF"
+			(at 231.14 -427.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRFR5305TRPBF?qs=NFlznGuI7112KuIDPbxMDg%3D%3D"
+			(at 231.14 -527.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Infineon"
+			(at 231.14 -627.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "IRFR5305TRPBF"
+			(at 231.14 -727.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C2624"
+			(at 242.57 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "43de3d4a-bc5e-48cd-b565-e2faf7ec032d")
+		)
+		(pin "3"
+			(uuid "a1764307-67db-44da-a3f6-770f22eb2555")
+		)
+		(pin "1"
+			(uuid "6cb370e3-e3ed-4c9c-adba-8395cb11cef0")
+		)
+		(instances
+			(project "PCB_SalusIV"
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 260.35 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19c4b14b-da55-45f0-a852-f236b954fadd")
+		(property "Reference" "R6"
+			(at 255.27 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1K"
+			(at 255.524 69.596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 258.572 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 260.35 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C1469"
+			(at 260.35 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1ec580c-b9b8-4494-bb79-18bb50a68115")
+		)
+		(pin "2"
+			(uuid "611c6b90-b95f-40c3-bff0-576633bdfa3b")
+		)
+		(instances
+			(project "PCB_SalusIV"
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 260.35 81.28 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c5f9df0-4118-4d0d-b6a3-2f8da7316fff")
+		(property "Reference" "D2"
+			(at 255.016 79.756 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BZT52C5V1"
+			(at 247.396 83.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Footprints:SOD3715X135N"
+			(at 260.35 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 260.35 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C151588"
+			(at 260.35 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c33b6f97-9692-463e-9a01-4484f4116324")
+		)
+		(pin "2"
+			(uuid "c33dcab5-11ab-4ad7-86db-caa367f5a1af")
+		)
+		(instances
+			(project "PCB_SalusIV"
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 260.35 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4bd50c75-b092-4831-a409-82944652638a")
+		(property "Reference" "R1"
+			(at 256.286 23.876 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1K"
+			(at 256.286 26.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 258.572 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 260.35 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C1469"
+			(at 260.35 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7890463-1a60-48f1-8353-2268ce9ec21f")
+		)
+		(pin "2"
+			(uuid "8b889fee-113b-4257-abaa-322ee67f4831")
+		)
+		(instances
+			(project ""
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simbolos:DC-005-5A-2.0")
+		(at 275.59 74.93 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4da027c5-a054-4d0a-a718-cd62eba7f62d")
+		(property "Reference" "J2"
+			(at 273.304 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "DC-005-5A-2.0"
+			(at 267.462 69.088 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Footprints:XKB_DC-005-5A-2.0"
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "XKB Industrial Precision"
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "11 mm"
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "Package"
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/DC-005-5A-2.0/XKB+Connection/view-part/?ref=eda"
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "A0"
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/DC-005-5A-2.0/XKB+Connection/view-part/?ref=snap"
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "DC-005-5A-2.0"
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "\n                        \n                            DC Power Receptacle Jack, Through Hole，Right Angle\n                        \n"
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "XKB"
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C381116"
+			(at 275.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "52efcaef-25cf-45d3-a83e-ae25ffd19d55")
+		)
+		(pin "1"
+			(uuid "fed4bc1d-738d-4e0b-a011-e314a222bd5d")
+		)
+		(pin "3"
+			(uuid "2923576b-186b-4ab2-8a46-026a7114894d")
+		)
+		(instances
+			(project "PCB_SalusIV"
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simbolos:IRFR5305TRPBF")
+		(at 243.84 27.94 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73b942a5-c88f-47db-a6b4-583a017b2bea")
+		(property "Reference" "Q1"
+			(at 232.41 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IRFR5305TRPBF"
+			(at 232.41 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Footprints:IRFR5305TRPBF"
+			(at 232.41 -70.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/irfr5305pbf.pdf?fileId=5546d462533600a401535632522820ff"
+			(at 232.41 -170.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "-55V Single P-Channel HEXFET Power MOSFET in a D-Pak package"
+			(at 243.84 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "2.507"
+			(at 232.41 -370.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "942-IRFR5305TRPBF"
+			(at 232.41 -470.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRFR5305TRPBF?qs=NFlznGuI7112KuIDPbxMDg%3D%3D"
+			(at 232.41 -570.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Infineon"
+			(at 232.41 -670.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "IRFR5305TRPBF"
+			(at 232.41 -770.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C2624"
+			(at 243.84 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "390b46ae-65f7-408b-9b7d-8450f9df76c5")
+		)
+		(pin "3"
+			(uuid "aba4f3ed-d401-4d20-94ae-4c7af71e3cbf")
+		)
+		(pin "1"
+			(uuid "251eb954-acee-4749-9927-3fb813b267c9")
+		)
+		(instances
+			(project ""
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 250.19 30.48 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90ff1314-d8f1-4f3a-ac37-0fcc9d65e14a")
+		(property "Reference" "R2"
+			(at 250.19 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47K"
+			(at 250.19 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 250.19 28.702 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 250.19 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C25664"
+			(at 250.19 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "207ccd4d-cf3c-43a4-9f1e-52f4868f7ab8")
+		)
+		(pin "2"
+			(uuid "07b3cbf8-7dac-4d92-b685-40169032fcb1")
+		)
+		(instances
+			(project "PCB_SalusIV"
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 260.35 36.83 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "97a68da3-2a58-47e3-852f-5cf6ce80c619")
+		(property "Reference" "D1"
+			(at 255.016 35.306 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BZT52C3V3"
+			(at 247.396 38.608 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Footprints:SOD3715X135N"
+			(at 260.35 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 260.35 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C151564"
+			(at 260.35 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5cc2e25-3ffa-41a3-be75-4da35704689f")
+		)
+		(pin "2"
+			(uuid "68fd36f2-b626-4682-a95b-1a32825d084e")
+		)
+		(instances
+			(project ""
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simbolos:DC-005-5A-2.0")
+		(at 275.59 30.48 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d94e07e-17cb-408d-ba7a-f255a03f8966")
+		(property "Reference" "J1"
+			(at 273.304 22.352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "DC-005-5A-2.0"
+			(at 267.462 24.638 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Footprints:XKB_DC-005-5A-2.0"
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "XKB Industrial Precision"
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "11 mm"
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "Package"
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/DC-005-5A-2.0/XKB+Connection/view-part/?ref=eda"
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "A0"
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/DC-005-5A-2.0/XKB+Connection/view-part/?ref=snap"
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "DC-005-5A-2.0"
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "\n                        \n                            DC Power Receptacle Jack, Through Hole，Right Angle\n                        \n"
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "XKB"
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C381116"
+			(at 275.59 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1d8dd981-913d-43ed-acd6-05b5617b0da2")
+		)
+		(pin "1"
+			(uuid "88a08fed-4e07-4da3-9d92-775720dceda6")
+		)
+		(pin "3"
+			(uuid "792b9dc4-7bfc-4225-8b6d-36d7602cd644")
+		)
+		(instances
+			(project ""
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 250.19 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1081c79-f073-4939-87e8-8d499081a8f0")
+		(property "Reference" "R5"
+			(at 250.19 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47K"
+			(at 250.19 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 250.19 76.708 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 250.19 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C25664"
+			(at 250.19 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee81ccec-94f9-42e8-99ed-b06ce39136e6")
+		)
+		(pin "2"
+			(uuid "5deb27c1-7cc9-41df-91a8-33b9b23dcd66")
+		)
+		(instances
+			(project "PCB_SalusIV"
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simbolos:IRFR5305TRPBF")
+		(at 217.17 34.29 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d34dbf5b-cbfc-4e86-a4b6-bf75c769b294")
+		(property "Reference" "Q2"
+			(at 205.74 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IRFR5305TRPBF"
+			(at 205.74 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Footprints:IRFR5305TRPBF"
+			(at 205.74 -64.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/irfr5305pbf.pdf?fileId=5546d462533600a401535632522820ff"
+			(at 205.74 -164.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "-55V Single P-Channel HEXFET Power MOSFET in a D-Pak package"
+			(at 217.17 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "2.507"
+			(at 205.74 -364.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "942-IRFR5305TRPBF"
+			(at 205.74 -464.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRFR5305TRPBF?qs=NFlznGuI7112KuIDPbxMDg%3D%3D"
+			(at 205.74 -564.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Infineon"
+			(at 205.74 -664.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "IRFR5305TRPBF"
+			(at 205.74 -764.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C2624"
+			(at 217.17 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ce65bb58-3a61-4d81-8cfd-b3237e86e2c0")
+		)
+		(pin "3"
+			(uuid "f1136ca9-40f9-432d-bbf2-d36f22ef0214")
+		)
+		(pin "1"
+			(uuid "f7d7cb1c-d57a-46db-9b13-40d67997218e")
+		)
+		(instances
+			(project "PCB_SalusIV"
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 226.06 41.91 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d624d8d0-7034-436f-a1da-e66e6e4926a3")
+		(property "Reference" "R3"
+			(at 228.6 40.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "6.8K"
+			(at 228.6 43.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 227.838 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 226.06 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C26046"
+			(at 226.06 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "daf92c40-2902-4488-be3d-d637a9273c27")
+		)
+		(pin "2"
+			(uuid "f2c450b6-c5cb-47c2-aebc-d013c3cfb07d")
+		)
+		(instances
+			(project "PCB_SalusIV"
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simbolos:IRFR5305TRPBF")
+		(at 217.17 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7872056-d8a6-419d-89ed-f17498003306")
+		(property "Reference" "Q4"
+			(at 205.74 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IRFR5305TRPBF"
+			(at 205.74 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Footprints:IRFR5305TRPBF"
+			(at 205.74 -19.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/irfr5305pbf.pdf?fileId=5546d462533600a401535632522820ff"
+			(at 205.74 -119.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "-55V Single P-Channel HEXFET Power MOSFET in a D-Pak package"
+			(at 217.17 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "2.507"
+			(at 205.74 -319.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "942-IRFR5305TRPBF"
+			(at 205.74 -419.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRFR5305TRPBF?qs=NFlznGuI7112KuIDPbxMDg%3D%3D"
+			(at 205.74 -519.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Infineon"
+			(at 205.74 -619.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "IRFR5305TRPBF"
+			(at 205.74 -719.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C2624"
+			(at 217.17 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e50b69b0-b125-4023-90f9-f62180640716")
+		)
+		(pin "3"
+			(uuid "028a4b86-bd56-4676-aa4b-3ba4aa9da5d7")
+		)
+		(pin "1"
+			(uuid "e3ce1d0c-0264-4300-87a7-9f1ceb9b8f94")
+		)
+		(instances
+			(project "PCB_SalusIV"
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 226.06 86.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fcbee700-1a3b-4ed5-9280-4307e005f307")
+		(property "Reference" "R4"
+			(at 228.6 85.0899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "6.8K"
+			(at 228.6 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 227.838 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 226.06 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC PN" "C26046"
+			(at 226.06 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15dc9293-878e-4190-8461-42b1fdd6b5ff")
+		)
+		(pin "2"
+			(uuid "b4d4d6ec-e474-4982-84d1-6e718e760126")
+		)
+		(instances
+			(project "PCB_SalusIV"
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
