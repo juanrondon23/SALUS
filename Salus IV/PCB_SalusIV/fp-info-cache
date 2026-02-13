@@ -1,4 +1,4 @@
-23779739968621525
+23788594507992207
 A000067
 Arduino_Mega2560_R3_Shield
 https://docs.arduino.cc/hardware/mega-2560
@@ -56574,6 +56574,20 @@ emi filter
 5
 5
 Footprints
+HDR-TH_6P-P2.54-V-M-R2-C3-S2.54-1
+
+
+0
+6
+6
+Footprints
+IDC-TH_40P-P2.54_C9138
+
+
+0
+40
+40
+Footprints
 IRFR5305TRPBF
 IRFR5305TRPBF-3
 MOSFET (P-Channel)
@@ -56581,12 +56595,33 @@ MOSFET (P-Channel)
 3
 3
 Footprints
+RELAY-TH_SRD-XXVDC-XL-C
+
+
+0
+5
+5
+Footprints
 SOD3715X135N
 
 
 0
 2
 2
+Footprints
+TE_282836-6
+
+
+0
+6
+6
+Footprints
+TRANS_IRLML6344TRPBF
+
+
+0
+3
+3
 Footprints
 XKB_DC-005-5A-2.0
 
