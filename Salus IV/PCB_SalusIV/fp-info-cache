@@ -1,4 +1,4 @@
-23804536175345711
+23815167400027415
 A000067
 Arduino_Mega2560_R3_Shield
 https://docs.arduino.cc/hardware/mega-2560
@@ -56574,6 +56574,13 @@ emi filter
 5
 5
 Footprints
+AMS1117
+
+
+0
+4
+4
+Footprints
 CONN-TH_2P-P5.00_CPC3703CTR
 
 
@@ -56630,6 +56637,13 @@ MOSFET (P-Channel)
 3
 3
 Footprints
+Protector-ESD
+
+
+0
+6
+6
+Footprints
 RELAY-TH_SRD-XXVDC-XL-C
 
 
@@ -56665,6 +56679,20 @@ SSOP-28_L10.2-W5.3-P0.65-LS7.8-BL
 28
 28
 Footprints
+SW-SMD_4P-L6.0-W6.0-P4.50-LS9.2
+
+
+0
+4
+4
+Footprints
+Switch-Definitivo
+
+
+0
+4
+4
+Footprints
 TE_282836-6
 
 
@@ -56679,12 +56707,26 @@ TRANS_IRLML6344TRPBF
 3
 3
 Footprints
+USB-C-SMD_G-SWITCH_GT-USB-7010ASV
+
+
+0
+16
+16
+Footprints
 VQFN-24_L4.0-W4.0-P0.50-BL-EP2.5
 
 
 0
 25
 25
+Footprints
+WIRELM-SMD_ESP32-S3-WROOM-1
+
+
+0
+49
+41
 Footprints
 XKB_DC-005-5A-2.0
 

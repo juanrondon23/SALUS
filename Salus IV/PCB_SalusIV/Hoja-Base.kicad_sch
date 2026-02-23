@@ -1,0 +1,94 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "f80b8d68-a06a-4938-9f0c-580c57a122c6")
+	(paper "A4")
+	(title_block
+		(title "PCB Salus IV")
+		(date "2026-02-11")
+		(company "A-EYE")
+	)
+	(lib_symbols)
+	(sheet
+		(at 176.53 20.32)
+		(size 93.98 123.19)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0c1a54cc-a3cb-49cb-9cb2-ddd37aad83a6")
+		(property "Sheetname" "ESP32"
+			(at 176.53 19.6084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ESP32.kicad_sch"
+			(at 176.53 144.0946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Hoja-Base"
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 60.96 20.32)
+		(size 82.55 124.46)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "80894a10-83b9-4e8d-b9cf-8d6ea60cef02")
+		(property "Sheetname" "PCBSalus"
+			(at 60.96 19.6084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PCB_SalusIV.kicad_sch"
+			(at 60.96 145.3646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Hoja-Base"
+				(path "/f80b8d68-a06a-4938-9f0c-580c57a122c6"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
