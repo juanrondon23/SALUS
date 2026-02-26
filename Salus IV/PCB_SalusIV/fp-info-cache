@@ -1,4 +1,4 @@
-23818711287495835
+23822255352964068
 A000067
 Arduino_Mega2560_R3_Shield
 https://docs.arduino.cc/hardware/mega-2560
@@ -56601,6 +56601,20 @@ CONN-TH_2P-P5.00_CPC3703CTR
 0
 2
 2
+Footprints
+CONN-TH_S3B-XH-A-LF-SN
+
+
+0
+3
+3
+Footprints
+CONN-TH_S4B-XH-A-LF-SN
+
+
+0
+4
+4
 Footprints
 HDR-TH_2P-P2.54-V-M-3
 
