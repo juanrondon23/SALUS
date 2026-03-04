@@ -1,4 +1,4 @@
-23822255352964068
+23825800111617872
 A000067
 Arduino_Mega2560_R3_Shield
 https://docs.arduino.cc/hardware/mega-2560
@@ -56679,6 +56679,13 @@ RELAY-TH_SRD-XXVDC-XL-C
 5
 5
 Footprints
+RES-ARRAY-SMD_1606-16P-L4.0-W1.6-BL
+
+
+0
+16
+16
+Footprints
 RES-TH_BD1.9-L3.3-P7.30-D0.5
 
 
@@ -56692,6 +56699,13 @@ RES-TH_BD2.5-L6.5-P10.50-D0.6
 0
 2
 2
+Footprints
+SI2301CDS
+
+
+0
+3
+3
 Footprints
 SOD3715X135N
 
