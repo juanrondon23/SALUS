@@ -1,4 +1,4 @@
-23825800111617872
+23831118032098978
 A000067
 Arduino_Mega2560_R3_Shield
 https://docs.arduino.cc/hardware/mega-2560
@@ -56616,6 +56616,13 @@ CONN-TH_S4B-XH-A-LF-SN
 4
 4
 Footprints
+DFN1610-2L_L1.6-W1.0-P1.10-RD
+
+
+0
+2
+2
+Footprints
 HDR-TH_2P-P2.54-V-M-3
 
 
@@ -56700,6 +56707,13 @@ RES-TH_BD2.5-L6.5-P10.50-D0.6
 2
 2
 Footprints
+RQ5P0
+
+
+0
+3
+3
+Footprints
 SI2301CDS
 
 
@@ -56762,6 +56776,13 @@ VQFN-24_L4.0-W4.0-P0.50-BL-EP2.5
 0
 25
 25
+Footprints
+WIRELM-SMD_ESP32-C6-WROOM-1
+
+
+0
+37
+37
 Footprints
 WIRELM-SMD_ESP32-S3-WROOM-1
 
